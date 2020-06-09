@@ -39,9 +39,9 @@ public class LoginEntity {
 	public static Connection getConnection() throws Exception{
 		try {
 			String driver = "com.mysql.cj.jdbc.Driver";
-			String url = "jdbc:mysql://localhost/dbuser?serverTimezone=UTC";
-			String user = "root";
-			String password = "";
+			String url = "jdbc:mysql://mydatabase.cmlal0aall18.us-east-2.rds.amazonaws.com/dbuser";
+			String user = "admin";
+			String password = "password";
 			Class.forName(driver);
 			Connection con = DriverManager.getConnection(url,user,password);
 			System.out.println("Connected");
