@@ -38,6 +38,7 @@ public class LoginEntity {
 	}
 	public static Connection getConnection() throws Exception{
 		try {
+			//Connection
 			String driver = "com.mysql.cj.jdbc.Driver";
 			String url = "jdbc:mysql://mydatabase.cmlal0aall18.us-east-2.rds.amazonaws.com/dbuser";
 			String user = "admin";
